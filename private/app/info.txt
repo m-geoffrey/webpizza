@@ -1,0 +1,2 @@
+Le répertoire APP stocke les scripts commun à toutes les applications.
+

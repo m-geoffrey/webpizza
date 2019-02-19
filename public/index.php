@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WebPizza</title>
-</head>
-<body>
-    <h1>lolmdr</h1>
-</body>
-</html>
+<?php
+/**
+ * Fichier de démarrage de l'application
+ */
+
+// 1. Intégration du fichier d'exécution de l'application
+require_once "../private/app/src/app.php";
+
+
+
