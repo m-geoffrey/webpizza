@@ -11,7 +11,7 @@ if (!defined('UTILS_PATH')) {
 if (UTILS_PATH != null) {
     // Scanner le répertoire UTILS_PATH
     $utils_scan = scandir(UTILS_PATH);
-    var_dump($utils_scan);
+    // var_dump($utils_scan);
 
     // Une boucle sur la liste des entrées $utils_scan
     foreach( $utils_scan as $key => $value )
