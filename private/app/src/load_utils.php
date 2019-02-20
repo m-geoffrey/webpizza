@@ -17,7 +17,7 @@ if (UTILS_PATH != null) {
     foreach( $utils_scan as $key => $value )
     {
         // Filtre les fichiers se terminant par .php
-        if ( preg_match("/\.php$/", $value)) {
+        if (preg_match("/\.php$/", $value)) {
             // On inclus uniquement les fichiers ".php"
             include_once UTILS_PATH.$value;
         }

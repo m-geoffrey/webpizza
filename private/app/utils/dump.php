@@ -12,8 +12,11 @@
   * @param [mixed] $data
   * @return void
   */
-function dump ( $data ) {
+if (!function_exists('dump')) 
+{
+    function dump ( $data ) {
     echo "<pre>";
     print_r($data);
     echo "</pre>";
+    }
 }
