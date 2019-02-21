@@ -4,7 +4,8 @@
  * 
  * 1. Définition des constantes
  * 2. Définition des variables d'environnement d'exécution
- * 3. Définition 
+ * 3. Définition des variables de base de données
+ * 4. Config de base de données
  */
 
 /**
@@ -32,5 +33,25 @@ $dev_domains = [
     "localhost",
     "webpizza.local"
 ];
+
+
+
+/**
+ * 3. Définition des variables de base de données
+ */
+
+// Liste des configurations de connexions aux bases de données par défaut
+$db_config = [];
+
+// Liste des connexions aux bases de données
+// Cette liste sera nourri par le fichier db_connect.php
+$db = [];
+
+// Inclusion de la cfg de la BDD
+require_once "database.php";
+
+/**
+ * 4. Config de base de données
+ */
 
 

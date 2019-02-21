@@ -33,8 +33,8 @@ if (!function_exists('getUserLanguages'))
 }
 
 // La langue principale
-dump (getUserLanguages());
-dump (getUserLanguages(false));
+    // dump (getUserLanguages());
+    // dump (getUserLanguages(false));
 
 // Touts les langues
-dump (getUserLanguages(true));
+    // dump (getUserLanguages(true));
