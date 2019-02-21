@@ -8,6 +8,7 @@
  * 4. Config de base de données
  */
 
+
 /**
  * 1. Définition des constantes
  */
@@ -17,6 +18,7 @@ define('UTILS_PATH', "../private/app/utils/");
 
 // WEBSITE_TITLE : Définition du titre du site
 define ('WEBSITE_TITLE', "WebPizza !");
+
 
 /**
  * 2. Définition des variables d'environnement d'exécution
@@ -35,7 +37,6 @@ $dev_domains = [
 ];
 
 
-
 /**
  * 3. Définition des variables de base de données
  */
@@ -50,8 +51,19 @@ $db = [];
 // Inclusion de la cfg de la BDD
 require_once "database.php";
 
+
 /**
- * 4. Config de base de données
+ * 4. Définition des variables de routage
  */
+
+// Définition de l'uri par défaut
+$uri = "/";
+
+// Définition de la table de routage par défaut
+$routes = [];
+
+// Contient les informations de la route courante
+$route = [];
+require_once "routes.php";
 
 
