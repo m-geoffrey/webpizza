@@ -1,21 +1,24 @@
 <?php
 
 if (!function_exists('randstr')) {
-    function randstr($length = 10)
+    function randstr($length=10, $upper=false, $number=false) 
     {
         $characters = 'abcdefghijklmnopqrstuvwxyz';
         $characters_upper = strtoupper($characters);
-        $characters_number = "0123456789";
+        $characters_number = '0123456789';
 
         if ($upper) {
             $characters.= $characters_upper;
-            // var dump
+            // 
         }
 
         if ($number) {
-            $characters.= $characters_number;
-            // var dump
+            $characters .= $characters_number;
+            // 
         }
+
+        // 
+        
         $charactersLength = strlen($characters);
         $randomString = '';
         for ($i = 0; $i < $length; $i++) {

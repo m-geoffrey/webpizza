@@ -3,9 +3,10 @@
  * Fichier de définition de l'environnement d'exécution de l'application
  */
 
+
 // Dans le cas ou la variable $dev_domains n'est pas défini (dans le fichier config.php)
-// On initialise la variable $dev_domains avec un tableau vide
-if ( !isset($dev_domains)) {
+// On initalise la variable $dev_domains avec un tableau vide
+if (!isset($dev_domains)) {
     $dev_domains = [];
 }
 
@@ -18,5 +19,3 @@ if (
 ) {
     $env = "dev";
 }
-
-// echo "Valeur de \$env = ".$env;   Pour afficher si dev ou prod
